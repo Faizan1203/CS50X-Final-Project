@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In Options
+{% endblock %}
+
+{% block main %}
+    <form action="/login_buyer">
+        <button  type="submit" class="btn btn-primary btn-lg">Buyers' Login</button>
+    </form>
+    </div>
+    <div>
+    <form action="/login_seller">
+        <button action="/login_seller"type="submit" class="btn btn-secondary btn-lg">Sellers' Login</button>
+    </form>
+    </div>
+{% endblock %}

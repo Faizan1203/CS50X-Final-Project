@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Date Posted</th>
+        <th scope="col">Property Type</th>
+        <th scope="col">Price</th>
+        <th scope="col">Place</th>
+        <th scope="col">Owner Name</th>
+        <th scope="col">Owner Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for house in houses %}
+    <tr>
+        <td>{{house.timestamp}}</td>
+        <td>{{house.property_type}}</td>
+        <td>{{house.price}}</td>
+        <td>{{house.place}}</td>
+        <td>{{house.owner_name}}</td>
+        <td>{{house.owner_phone}}</td>
+{% endfor %}
+
+    </tr>
+
+    </tbody>
+</table>
+{% endblock %}

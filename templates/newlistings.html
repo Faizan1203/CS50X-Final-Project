@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="alert alert-primary" role="alert">
+    Fill in the below form to help us assist you.
+</div>
+
+    <form action="/newlistings" method="post">
+        <div class="form-group">
+
+            What kind of a property are you looking for?
+            <select class="form-control" name="property_type">
+                <option disabled selected value>Property Type</option>
+                <option>Single Family Home</option>
+                <option>Condo</option>
+                <option>Lot</option>
+            </select>
+        </div>
+        <div class="form-group">
+            What is you Price Range?
+            <input class="form-control" name="price" placeholder="Price" type="text" autocomplete="off">
+        </div>
+        <div class="form-group">
+            Which place are you looking for?
+            <input class="form-control" name="property_place" placeholder="Place" type="text" autocomplete="off">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Get Results</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+# Buyers's World
+#### Video Demo:  https://youtu.be/e5wMgv2BuTg
+#### Description:
+Basically, this website uses flask, HTML, SQL, along with a little bit of CSS. This website is a common ground where the buyers can meet the sellers. This website helps sellers list their properties. Then any buyer can view these properties and view the seller details and get in touch with them and buy the property if needed. I have also taken care of all the validations.
+
+So this website was inspired by the week 9 problem set "finance". There is a static folder that has the CSS code. Also, there is a templates folder that has 10 HTML files. The first one is an apology which shows a cat if the user tries to break the code and the reason is shown there too. The next one is home which displays the home screen when the user is logged in. The next one is an index that displays the table when the buyer fills in the details. After that is the layout which has the layout for all the HTML pages. Then we have the login begin one which shows two buttons that allow the user to log in as a buyer or seller. Then comes the buyer login screen which takes the buyer's login details and logs the user in. The seller login is similar to the buyer login. The new listings file takes the input from the buyer to filter out the properties according to the user's preferences. The register file takes the input to register the user. Finally, the upload details file uploads the seller details into the database.
+
+Now moving onto application.py, I have created various functions to deal with the data storage and retrieval process. If the user is not logged in they will be redirected to the login begin file else they will be redirected to the home file. The login seller function logs the user in and redirects the user to the seller home page. The buyer login function does the same and takes the user to the buyer home page. The logout function logs the user out and redirects to the home page. The register function registers the user and uploads the information into the database. The new listings function sends the required information to the index file. The upload details function takes the input from the seller and uploads the information into the database.
+
+Then moving onto the database. I have created two tables to store the user info and the property info. This helps me to retrieve information with more ease.
+
+Finally, the helpers' file has a few functions like apology and login required which help out in the end too.

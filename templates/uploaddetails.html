@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="alert alert-primary" role="alert">
+    Fill in the below form to help us assist you.
+</div>
+
+    <form action="/upload details" method="post">
+        <div class="form-group">
+
+            What kind of a property do you own?
+            <select class="form-control" name="property_type">
+                <option disabled selected value>Property Type</option>
+                <option>Single Family Home</option>
+                <option>Condo</option>
+                <option>Lot</option>
+            </select>
+        </div>
+        <div class="form-group">
+            What is your Quotation?
+            <input class="form-control" name="quotation" placeholder="Quotaion" type="text" autocomplete="off">
+        </div>
+        <div class="form-group">
+            Where is it located?
+            <input class="form-control" name="property_place" placeholder="Place" type="text" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="first_name" placeholder="First Name" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="last_name" placeholder="Last Name" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="phone_number" placeholder=" Phone Number" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+{% endblock %}
